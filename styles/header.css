@@ -51,16 +51,12 @@
     flex-shrink: 0;
 }
 .voice-button-logo {
-    height: 30x;
+    height: 24x;
     width: 40px;
     display: flex;
     align-items: center;
 }
-.search-button-logo {
-    height: 30px;
-    align-items: center;
-    
-}
+
 .search-button{
     height: 40px;
     width: 50px;
@@ -72,6 +68,35 @@
     align-items: center;
     margin-right: 10px;
     
+    
+}
+.search-button,
+.voice-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-button .tooltip, 
+.voice-button .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip, 
+.voice-button:hover .tooltip {
+    opacity: 1;
 }
 .search-box {
     height: 36px;
