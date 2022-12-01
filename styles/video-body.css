@@ -1,18 +1,18 @@
-.video-body {
-    display: flex;
-    flex-direction: row;
-    
-    
-    
+.video-body{
+    align-items: center;
+    height: 70px;
+    border-color: black;
+    width: 40px;
+    border: 1;
+    margin: 0;
+    width: 30px;
+}
+.video-body:hover {
+    background-color: rgb(184, 184, 184);
 }
 .video-top-link {
-    position: fixed;
-    background-color: white;
-    height: 56px;
-    width: 100%;
+    width: 800px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 50px;
-
-
 }
